@@ -17,16 +17,16 @@ namespace Facebook.Pages
            
             //Thread.Sleep(8000);
             IAlert alt = GlobalDefinitions.driver.SwitchTo().Alert();
-            Thread.Sleep(8000);
+            GlobalDefinitions.wait(4);
             alt.Accept();
             //Populate the excel sheet
             ExcelLib.PopulateInCollection(Base.ExcelPath, "HomePage");
             //IAlert alt = GlobalDefinitions.driver.SwitchTo().Alert();
-           // alt.Dismiss();
-            Thread.Sleep(2000);
+            // alt.Dismiss();
+            GlobalDefinitions.wait(4);
             //Enter the Name or word on the Search box
             GlobalDefinitions.TextBox(GlobalDefinitions.driver, ExcelLib.ReadData(3, "Locator"), ExcelLib.ReadData(3, "LocatorValue"), ExcelLib.ReadData(3, "InputValue"));
-            Thread.Sleep(3000);
+            GlobalDefinitions.wait(3);
             //Click on Search
             GlobalDefinitions.ActionButton(GlobalDefinitions.driver, ExcelLib.ReadData(4, "Locator"), ExcelLib.ReadData(4, "LocatorValue"));
         }

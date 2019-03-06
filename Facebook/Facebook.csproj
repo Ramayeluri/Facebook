@@ -77,6 +77,8 @@
     <Compile Include="Global\GlobalDefinitions.cs" />
     <Compile Include="Pages\FBHomePage.cs" />
     <Compile Include="Pages\LoginPage.cs" />
+    <Compile Include="Pages\Marketplace.cs" />
+    <Compile Include="Pages\Profile.cs" />
     <Compile Include="Pages\Register.cs" />
     <Compile Include="Test\Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

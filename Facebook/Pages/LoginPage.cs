@@ -24,12 +24,12 @@ namespace Facebook.Pages
 
                 //Enter Email or phone
                 Global.GlobalDefinitions.TextBox(Global.GlobalDefinitions.driver, Global.CommonMethods.ExcelLib.ReadData(3, "Locator"), Global.CommonMethods.ExcelLib.ReadData(3, "LocatorValue"), Global.CommonMethods.ExcelLib.ReadData(3, "InputValue"));
-                 Thread.Sleep(3000);
+            Global.GlobalDefinitions.wait(4);
                 //Enter Password
                 Global.GlobalDefinitions.TextBox(Global.GlobalDefinitions.driver, Global.CommonMethods.ExcelLib.ReadData(4, "Locator"), Global.CommonMethods.ExcelLib.ReadData(4, "LocatorValue"), Global.CommonMethods.ExcelLib.ReadData(4, "InputValue"));
-                  Thread.Sleep(3000);
-                //Click on Login Button
-                Global.GlobalDefinitions.ActionButton(Global.GlobalDefinitions.driver, Global.CommonMethods.ExcelLib.ReadData(5, "Locator"), Global.CommonMethods.ExcelLib.ReadData(5, "LocatorValue"));
+            Global.GlobalDefinitions.wait(4);
+            //Click on Login Button
+            Global.GlobalDefinitions.ActionButton(Global.GlobalDefinitions.driver, Global.CommonMethods.ExcelLib.ReadData(5, "Locator"), Global.CommonMethods.ExcelLib.ReadData(5, "LocatorValue"));
 
 
             }
